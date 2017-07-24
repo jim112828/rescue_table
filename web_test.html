@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.map {
+	position:absolute;
+	top:0px;
+    left:0px;
+    z-index:-1;
+
+}
+.image {
+   
+    width: 60px;
+    height: 60px;
+    
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#img_1{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 120px 0 0 -30px;
+
+}
+#img_2{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-70px 0 0 -60px;
+
+}
+#img_3{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-80px 0 0 -60px;
+
+}
+#img_3{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-80px 0 0 -60px;
+
+}
+.blink {
+    animation-duration: 0.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position:absolute;
+    top:150px;
+    left:390px;
+    z-index:0;
+
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+</style>
+<head>
+	<title>rescue_app</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+<div class="container">
+
+<img class="blink" src="location.png" height="60" width="42">
+<img id="img_1" class="image" src="icon_tag.png">
+<img id="img_2" class="image" src="icon_tag.png">
+<img id="img_3" class="image" src="icon_tag.png">
+<ul class="list-group">
+    <li class="list-group-item"><table class="table">
+    <thead>
+      <tr>
+        <th>小隊編號</th>
+        <th>小隊單位</th>
+        <th>搜救進度</th>
+        <th>救出人數</th>
+        <th>負責區域</th>
+        <th>備註</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>一</td>
+        <td>台南消防隊</td>
+        <td><div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div></td>
+    <td>5</td>
+    <td>A棟南側</td>
+    <td>暫無新發現</td>
+      </tr>
+      <tr>
+        <td>二</td>
+        <td>台北搜救隊</td>
+        <td><div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50%
+    </div></td>
+    <td>3</td>
+    <td>A棟北側</td>
+    <td>發現D棟TAG</td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td>三</td>
+        <td>台中救難隊</td>
+        <td><div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60%
+    </div></td>
+    <td>9</td>
+    <td>D棟南側</td>
+    <td>需求人力支援</td>
+      </tr>
+      <tr>
+
+      </tr>
+    </tbody>
+  </table></li>
+    <li  class="list-group-item"><img src="office.png" class="img-thumbnail" alt="Cinque Terre">
+    	<img id="img_1" class="image" src="icon_tag.png">
+    	<img id="img_2" class="image" src="icon_tag.png">
+    	<img id="img_3" class="image" src="icon_tag.png">
+    	<img class="blink" src="location.png" height="60" width="42">
+    </li>
+
+    <li class="list-group-item"><h1>紅外線/超音波感測器回報</h1></li>
+  </ul>
+ 
+</div>
+</div>
+</body>
+</html>
+
