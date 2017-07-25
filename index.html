@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
-.map {
-	position:absolute;
-	top:0px;
-    left:0px;
-    z-index:-1;
 
-}
 .image {
    
     width: 30px;
-    height: 30px;
-    
-    -webkit-animation:spin 4s linear infinite;
+    height: auto;
+    z-index:1;
+    -webkit-animation:spin 4s linear infinite; 
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
@@ -25,30 +19,56 @@
 	position: absolute;
     top: 50%;
     left: 50%;
-    margin: 120px 0 0 -30px;
+    margin: -200px 0 0 0px;
 
 }
 #img_2{
 	position: absolute;
     top: 50%;
     left: 50%;
-    margin:-70px 0 0 -60px;
+    margin:-70px 0 0 100px;
 
 }
 #img_3{
 	position: absolute;
     top: 50%;
-    left: 50%;
-    margin:-80px 0 0 -60px;
+    left: 75%;
+    margin: 0px 0 0 -60px;
 
 }
-#img_3{
+#img_4{
 	position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    margin:-80px 0 0 -60px;
+    margin:200px 0 0 0px;
 
 }
+#img_5{
+	position: absolute;
+    top: 58%;
+    left: 55%;
+    margin:70px 0 0 -60px;
+
+}
+#img_6{
+	position: absolute;
+    top: 80%;
+    left: 35%;
+    margin:70px 0 0 -60px;
+    width: 30px;
+    height: auto;
+
+}
+#img_7{
+	position: absolute;
+    top: 20%;
+    left: 70%;
+    margin:70px 0 0 -60px;
+    width: 30px;
+    height: auto;
+
+}
+
 .blink {
     animation-duration: 0.5s;
     animation-name: blink;
@@ -56,8 +76,8 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     position:absolute;
-    top:150px;
-    left:390px;
+    top:45%;
+    left:66%;
     z-index:0;
 
 }
@@ -83,11 +103,6 @@
 </head>
 <body>
 <div class="container">
-
-<img class="blink" src="location.png" height="60" width="42">
-<img id="img_1" class="image" src="icon_tag.png">
-<img id="img_2" class="image" src="icon_tag.png">
-<img id="img_3" class="image" src="icon_tag.png">
 <ul class="list-group">
     <li class="list-group-item"><table class="table">
     <thead>
@@ -142,10 +157,14 @@
     </tbody>
   </table></li>
     <li  class="list-group-item"><img src="office.png" class="img-thumbnail" alt="Cinque Terre">
-    	<img id="img_1" class="image" src="icon_tag.png">
-    	<img id="img_2" class="image" src="icon_tag.png">
-    	<img id="img_3" class="image" src="icon_tag.png">
+    	<a href="http://i.imgur.com/kBVi3Nv.jpg" title="window"><img id="img_1" class="image" src="icon_tag.png"></a>
+    	<a href="http://i.imgur.com/oee9iOB.jpg" title="window"><img id="img_2" class="image" src="icon_tag.png"></a>
+    	<a href="http://i.imgur.com/YYDHz0Y.jpg" title="window"><img id="img_3" class="image" src="icon_tag.png"></a>
+    	<a href="http://i.imgur.com/E3MR5ER.jpg" title="Fork"><img id="img_4" class="image" src="icon_tag.png"></a>
+    	<a href="http://i.imgur.com/37ptLp3.jpg" title="window"><img id="img_5" class="image" src="icon_tag.png" ></a>
     	<img class="blink" src="location.png" height="60" width="42">
+    	<img  id="img_6" src="extinguisher.png">
+    	<img  id="img_7" src="extinguisher.png">
     </li>
 
     <li class="list-group-item"><h1>紅外線/超音波感測器回報</h1></li>
